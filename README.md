@@ -1,4 +1,4 @@
-# Largest Number Finder
+````# Largest Number Finder
 
 ## Purpose
 
@@ -59,3 +59,5 @@ Before starting, make sure you have the following installed:
 5. View the Visual Representation of the Program:
    Once you have generated the .dot file using ControlFlowGraph_Generator, you can use an online Graphviz tool (such as Graphviz Online - https://graph.flyte.org/) to visualize the control flow graph.
    Simply upload or paste the content of the .dot file into the tool, and it will generate a visual representation of the program's control flow.
+git add README.md
+````
