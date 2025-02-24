@@ -1,0 +1,34 @@
+digraph G {
+    "START" -> "// Create a Scanner object to read user input
+Scanner scanner = new Scanner(System.in);";
+    "// Create a Scanner object to read user input
+Scanner scanner = new Scanner(System.in);" -> "// Prompt the user to enter three numbers
+System.out.print(\"Enter the first number: \");";
+    "// Prompt the user to enter three numbers
+System.out.print(\"Enter the first number: \");" -> "int num1 = scanner.nextInt();";
+    "int num1 = scanner.nextInt();" -> "System.out.print(\"Enter the second number: \");";
+    "System.out.print(\"Enter the second number: \");" -> "int num2 = scanner.nextInt();";
+    "int num2 = scanner.nextInt();" -> "System.out.print(\"Enter the third number: \");";
+    "System.out.print(\"Enter the third number: \");" -> "int num3 = scanner.nextInt();";
+    "int num3 = scanner.nextInt();" -> "// Find the largest number
+int largest = num1;";
+    "// Find the largest number
+int largest = num1;" -> "if (num2 > largest) {
+    largest = num2;
+}";
+    "// Find the largest number
+int largest = num1;" -> "num2 > largest";
+    "num2 > largest" -> "IfBranch";
+    "num2 > largest" -> "ElseBranch";
+    "IfBranch" -> "if (num3 > largest) {
+    largest = num3;
+}";
+    "IfBranch" -> "num3 > largest";
+    "num3 > largest" -> "IfBranch";
+    "num3 > largest" -> "ElseBranch";
+    "IfBranch" -> "// Output the largest number
+System.out.println(\"The largest number is: \" + largest);";
+    "// Output the largest number
+System.out.println(\"The largest number is: \" + largest);" -> "// Close the scanner
+scanner.close();";
+}
